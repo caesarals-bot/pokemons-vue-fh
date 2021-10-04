@@ -1,7 +1,7 @@
 import pokemonApi from "../api/pokemonApi"
 
 //creamos una array funtions para id de lo pokemons
-const getPokemons = () => {
+export const getPokemons = () => {
 
     const pokemonsArr = Array.from( Array(650) )
    
@@ -21,7 +21,7 @@ const getPokemonOptions = async() => {
 
 }
 //desestructuramos para sacar cada nombre de los pokemons
-const getPokemonNames = async( [a,b,c,d] = [] ) => {
+export const getPokemonNames = async( [a,b,c,d] = [] ) => {
 
     //const resp = await pokemonApi.get(`/1`)
     //console.log( resp.data.name, resp.data.id)
